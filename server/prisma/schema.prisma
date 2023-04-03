@@ -29,6 +29,8 @@ model Day {
   @@map("days")
 }
 
+
+// tabela para saber quais habitos foram completados e em qual dia
 model DayHabit {
   id String @id @default(uuid())
 
