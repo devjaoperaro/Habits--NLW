@@ -8,6 +8,7 @@ export function GenerateDatesFromYearBeginning(){
     const dates = [];
     let compareDate = firstDayOfTheYear;
 
+    // pegando todos os dias do ano até o momento atual
     while (compareDate.isBefore(today)) {
         dates.push(compareDate.toDate());
         compareDate = compareDate.add(1, 'day');
